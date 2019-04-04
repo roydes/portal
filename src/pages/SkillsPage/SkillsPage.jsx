@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import profile from "../../assets/profile.jpg"
 import { CSSTransition } from 'react-transition-group'
 import './SkillsPage.scss'
+import '../../assets/styles/animations.scss'
 
 
 export default class SkillsPage extends Component {
