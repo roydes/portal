@@ -1,5 +1,5 @@
 @import '../../assets/styles/animations.scss';
-
+$animation-time: 0.4s;
 .Preview {
     width: 300px;
     background-size: 100% 100%;
@@ -12,26 +12,41 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        > .TouchWrapper {
+        > .ImageWrapper {
             position: absolute;
             width: 100%;
             height: 100%;
             background-repeat: no-repeat;
             background-size: 100% 100%;
             overflow: hidden;
-            @extend %background-zoom-out;
+            @include background-zoom-out($animation-time);
             &:before {
                 content: " ";
                 position: absolute;
                 width: 100%;
                 height: 100%;
             }
-            &:hover {
-                @extend %background-zoom-in;
-            }
         }
-        > .Title, .Text {
-            padding: 0 5%;
+        > .TextWrapper {
+            padding: 10% 5%;
+            position: absolute;
+            @include slide-out-top($animation-time);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &:hover {
+            > .ImageWrapper {
+                @include background-zoom-in($animation-time);
+                &:before {
+                    background-color: rgba(58, 57, 57, 0.6);
+                    @include transition-all($animation-time);
+                }
+            }
+            > .TextWrapper {
+                @include slide-in-top($animation-time);
+                display: block;
+            }
         }
     }
 }

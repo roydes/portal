@@ -9,8 +9,8 @@ export default class AppRoutes extends Component {
     return (
        <div className="App-container">
           <Route path="/" exact component={HomePage}></Route>
+          <Route path="/skills"  component={SkillsPage}></Route>
           <Route path="/education" component={HomePage}></Route>
-          <Route path="/skills"  component={HomePage}></Route>
           <Route path="/works"  component={HomePage}></Route>
           <Route path="/research"  component={HomePage}></Route>
           <Route path="/contact" component={HomePage}></Route>

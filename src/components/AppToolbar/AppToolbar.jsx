@@ -29,7 +29,7 @@ class AppToolbar extends React.Component {
 
   componentDidMount() {
     if (this.props.behavior) {
-      window.addEventListener("scroll", this.toolbarMostChangeAspect);
+      window.addEventListener('scroll', this.toolbarMostChangeAspect);
     }
   }
 
@@ -41,13 +41,12 @@ class AppToolbar extends React.Component {
       this.setState({
         appBar: {
           backgroundColor: '#262620',
-          color: 'white',
+          color: changeColorOnScroll.color,
           height: '50px',
           minHeight: '50px',
           transition: 'all 0.4s ease-in-out 0s'
         },
         link: {
-          color: 'white',
           height: '50px',
         },
       });
@@ -55,12 +54,11 @@ class AppToolbar extends React.Component {
       this.setState({
         appBar: {
           backgroundColor: 'rgb(0,0,0,0)',
-          color: 'white',
+          color: changeColorOnScroll.color,
           transition: 'all 0.4s ease-in-out 0s',
           height: '70px',
         },
         link: {
-          color: 'white',
           height: '70px',
         },
       });
@@ -73,26 +71,26 @@ class AppToolbar extends React.Component {
       <div className={classes.root} id="AppToolBar">
         <AppBar position="fixed"  style={{...this.state.appBar}}>
           <Toolbar  style={{...this.state.appBar}}>
-            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+            <IconButton  style={{...this.state.appBar}} className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuIcon />
             </IconButton>
-            <Button component={Link} className={classes.link} to="">
+            <Button style={{...this.state.appBar}} component={Link} className={classes.link} to="">
               Home
             </Button>
-            <Button component={Link} className={classes.link} to="/skills">
+            <Button style={{...this.state.appBar}} component={Link} className={classes.link} to="/skills">
               Skills
             </Button>
-            <Button component={Link} className={classes.link} to="/works">
+            <Button style={{...this.state.appBar}} component={Link} className={classes.link} to="/works">
               Works
             </Button>
-            <Button component={Link} className={classes.link} to="/research">
+            <Button style={{...this.state.appBar}} component={Link} className={classes.link} to="/research">
               Research
             </Button>
-            <Button component={Link} className={classes.link} to="/education">
+            <Button style={{...this.state.appBar}} component={Link} className={classes.link} to="/education">
               Education
             </Button>
-            <Button component={Link} className={classes.link} to="/contact">
-              Education
+            <Button style={{...this.state.appBar}} component={Link} className={classes.link} to="/contact">
+              Contact
             </Button>
           </Toolbar>
         </AppBar>
@@ -116,7 +114,7 @@ const styles = {
   },
   menuButton: {
     marginLeft: -12,
-    marginRight: 20,
+    marginRight: 'auto',
     width: '100px',
     height: '70px',
     borderRadius: 0,
