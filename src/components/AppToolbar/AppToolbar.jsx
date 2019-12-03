@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 
 
 
-class AppToolbar extends React.Component {
+class AppToolbar extends Component {
 
   constructor(props) {
     super(props);
@@ -37,6 +37,7 @@ class AppToolbar extends React.Component {
     const { behavior } = this.props;
     const changeColorOnScroll = behavior.changeColorOnScroll;
     const windowsScrollTop = window.pageYOffset;
+  
     if (windowsScrollTop > changeColorOnScroll.height) {
       this.setState({
         appBar: {
@@ -48,7 +49,7 @@ class AppToolbar extends React.Component {
         },
         link: {
           height: '50px',
-        },
+        }
       });
     } else {
       this.setState({
@@ -60,13 +61,14 @@ class AppToolbar extends React.Component {
         },
         link: {
           height: '70px',
-        },
+        }
       });
     }
   }
 
   render() {
     const { classes } = this.props;
+    
     return (
       <div className={classes.root} id="AppToolBar">
         <AppBar position="fixed"  style={{...this.state.appBar}}>
@@ -96,9 +98,7 @@ class AppToolbar extends React.Component {
         </AppBar>
       </div>
     );
-
   }
-  
 }
 
 const styles = {

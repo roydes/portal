@@ -3,8 +3,7 @@ import React, { Component } from 'react'
 import '../../assets/styles/animations.scss'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import image3 from '../../assets/background_hands.jpg';
-import { applyMiddleware } from 'redux';
+import image3 from '../../assets/images/backgrounds/background_hands.jpg';
 
 class Timeline extends Component {
     constructor(props) {
@@ -12,27 +11,30 @@ class Timeline extends Component {
         this.state = { elements: this.props.elements }
         this.showWhenScrolled = this.showWhenScrolled.bind(this); 
     }
+
     showWhenScrolled(itemsCollection) {
         const scrollPosttion = window.scrollY;
         const threshold = scrollPosttion + window.innerHeight;
+
         for(let i = 0; i < itemsCollection.length; i ++) {
             const element = itemsCollection.item(i);
             const offsetTop = element.offsetTop;
             const elementHeight = element.offsetHeight;
-            if (threshold >= offsetTop + elementHeight/2 ) {
-                this.state.elements[i].show = true
-                this.setState({element: this.state.elements[i]})
-            } else {
-                this.state.elements[i].show = false
-                this.setState({element: this.state.elements[i]})
-            }
+            const elementSate = this.state.elements[i];
+
+            elementSate.show = threshold >= (offsetTop + (elementHeight/2));
+            console.log('show?',threshold >= (offsetTop + (elementHeight/2)))
+            this.setState({ element: elementSate })
         } 
     }
+
     componentDidMount() {
-        console.log('here')
         const itemsCollection = document.querySelectorAll("*[class^=\"Timeline-TimelineContent\"]")
+        console.log(itemsCollection);
+
         window.addEventListener('scroll', () => this.showWhenScrolled(itemsCollection));
     }
+
     componentWillUnmount() {
         window.removeEventListener("scroll", this.setBannerTransform);
     }
@@ -57,7 +59,7 @@ class Timeline extends Component {
                                 </div>
                                 <div className = {classes.Description}>
                                     <a  className={classes.Logo} href={element.link}>
-                                        <img className={classes.LogoImage} src={element.logo}/>
+                                        <img className={classes.LogoImage} src={element.logo} alt={element.projectCompany}/>
                                     </a>
                                     <p className={classes.DescriptionText}>
                                         {element.description}
@@ -76,6 +78,7 @@ class Timeline extends Component {
                         </CSSTransition>
                     </div>
                 });
+
         return (
             <div className={classes.root}>
                 <div className={classes.TimeLineContainer}>
@@ -85,6 +88,7 @@ class Timeline extends Component {
         )
     }
 }
+
 const styles = {
     root: {
       overflow: 'hidden',

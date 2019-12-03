@@ -13,12 +13,10 @@ export default function Sidebar({ width = 250, top=50, transitionDuration = 250,
   const openedSidenavStyle = {
     transform: 'translate(0px)', 
   };
-
   const closedContainerStyles = {
     width: '0px',
     minWidth: '0px',
   }
-  
   const openedContainerStyle = {
     width: width,
     minWidth: width,
