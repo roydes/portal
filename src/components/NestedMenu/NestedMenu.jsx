@@ -4,8 +4,8 @@ import CollapseItem from '../CollapseItem/CollapseItem'
 export default function NestedMenu({menus}) {
    
   function recrusivelyGenerateMenu(menus) {
-        
         const menuList = [];
+
         // For each Menu render childs content
         menus.forEach(menu => {
             const content = menu.childs.map(childMenu => {

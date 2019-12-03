@@ -2,10 +2,9 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import indigo from '@material-ui/core/colors/indigo';
 import blueGrey from '@material-ui/core/colors/blueGrey';
 import red from '@material-ui/core/colors/red';
-import backgroundImage from './assets/background_dark.jpg';
 import './assets/styles/variables.scss'
 
-export const AppTheme = createMuiTheme({
+const AppTheme = createMuiTheme({
   palette: {
     primary: blueGrey,
     secondary: indigo,
@@ -35,6 +34,4 @@ export const AppTheme = createMuiTheme({
   }
 });
 
-export const AppAssets = {
-  appBackgroundImage: backgroundImage
-}
+export default AppTheme;

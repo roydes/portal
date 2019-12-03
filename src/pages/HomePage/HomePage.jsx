@@ -1,14 +1,20 @@
-import React, { Component } from 'react'
-import './HomePage.scss';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import Timeline from '../../components/Timeline/Timeline'
+import Preview from '../../components/Preview/Preview';
+import carrerSectionBackground from '../../assets/images/backgrounds/background_mac.jpg';
+import { timeLine, projects } from '../../AppGlobals';
+import { changeHeader } from '../../redux/appActions';
+import { ReduxConstants } from '../../redux/reduxConstants';
+
 import '../../assets/styles/animations.scss';
 import '../../assets/styles/texts.scss';
 import '../../assets/styles/layout.scss';
-import Preview from '../../components/Preview/Preview'
-import carrerSectionBackground from '../../assets/background_mac.jpg';
-import { timeLine, projects } from '../../AppGlobals'
+import './HomePage.scss';
 
-export default class HomePage extends Component {
+
+class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,6 +22,11 @@ export default class HomePage extends Component {
       projectsDescriptions: projects,
     }
   }
+
+  componentDidMount(){
+    this.props.changeHeader(ReduxConstants.DEFAULT_STATE.headerAppearance)
+  }
+
   render() {
     const elements = this.state.elements;
     const projectsDescriptions = this.state.projectsDescriptions;
@@ -28,6 +39,7 @@ export default class HomePage extends Component {
                 key = {index}>
               </Preview>
     });
+
     return (
          <section className="Home-page Page">
           <div className="Header">
@@ -46,3 +58,17 @@ export default class HomePage extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+      headerTitle: state.headerAppearance.headerTitle,
+      headerSubtitle: state.headerAppearance.headerSubtitle,
+      headerBackground: state.headerAppearance.headerBackground
+  }
+}
+const mapDispatchToProps = {changeHeader}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(HomePage);

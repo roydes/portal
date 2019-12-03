@@ -4,5 +4,7 @@ import AppReducer from './appReducers'
 
 
 const AppStore = createStore(AppReducer);
+
 AppStore.dispatch(changeHeader());
+
 export default AppStore;
