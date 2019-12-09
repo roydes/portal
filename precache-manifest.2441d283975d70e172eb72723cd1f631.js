@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portal/static/media/uikit.8678ec2b.png"
   },
   {
-    "revision": "2947498eedff875ac5ab",
+    "revision": "d3febae4aab9552f9a5a",
     "url": "/portal/static/css/main.20b5e602.chunk.css"
   },
   {
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "url": "/portal/static/media/swift.db95c7a5.png"
   },
   {
-    "revision": "2947498eedff875ac5ab",
-    "url": "/portal/static/js/main.69b49f1e.chunk.js"
+    "revision": "d3febae4aab9552f9a5a",
+    "url": "/portal/static/js/main.4d83e7e3.chunk.js"
   },
   {
     "revision": "8b8cae1a997708f0ff0e6831d5abe474",
@@ -84,6 +84,10 @@ self.__precacheManifest = [
     "url": "/portal/static/media/futura-pt-book-589a6dec272c3.3a3dd420.woff"
   },
   {
+    "revision": "09fd79590578024bf7a01d16484c2837",
+    "url": "/portal/static/media/futura-pt-light-589a6e187563a.09fd7959.woff"
+  },
+  {
     "revision": "d20e5f06ba08929c23458868bec9911a",
     "url": "/portal/static/media/futura-pt-book-oblique-589e44623c7b4.d20e5f06.woff"
   },
@@ -92,43 +96,39 @@ self.__precacheManifest = [
     "url": "/portal/static/media/futura-pt-light-oblique-589e448ae90e2.ee9a9a1d.woff"
   },
   {
-    "revision": "09fd79590578024bf7a01d16484c2837",
-    "url": "/portal/static/media/futura-pt-light-589a6e187563a.09fd7959.woff"
-  },
-  {
     "revision": "1e77458ac18ace690912d6bf6c2c7cdf",
     "url": "/portal/static/media/futura-pt-medium-oblique-589e460871ec2.1e77458a.woff"
-  },
-  {
-    "revision": "56f56c319f80758c6a68ad4be0ca5bc8",
-    "url": "/portal/static/media/futura-pt-medium-589e45b956de4.56f56c31.woff"
-  },
-  {
-    "revision": "202fb753da68f923a0ed47078847b412",
-    "url": "/portal/static/media/futura-pt-demibold-589e43b852117.202fb753.woff"
-  },
-  {
-    "revision": "daaf3ca9e01958267b35fa97e186a0c0",
-    "url": "/portal/static/media/futura-pt-bold-oblique-589e453384a18.daaf3ca9.woff"
-  },
-  {
-    "revision": "524f304d1a3045b391685b6853a7cc08",
-    "url": "/portal/static/media/futura-pt-bold-589e44b6aacd3.524f304d.woff"
   },
   {
     "revision": "3f7f41395794e58c0f45cbbb08d00e81",
     "url": "/portal/static/media/futura-pt-demibold-oblique-589e43ec3ea82.3f7f4139.woff"
   },
   {
-    "revision": "20298b5698e78bacccd4da61cc38191f",
-    "url": "/portal/static/media/futura-pt-heavy-oblique-589a6e480ab16.20298b56.woff"
+    "revision": "202fb753da68f923a0ed47078847b412",
+    "url": "/portal/static/media/futura-pt-demibold-589e43b852117.202fb753.woff"
+  },
+  {
+    "revision": "56f56c319f80758c6a68ad4be0ca5bc8",
+    "url": "/portal/static/media/futura-pt-medium-589e45b956de4.56f56c31.woff"
+  },
+  {
+    "revision": "524f304d1a3045b391685b6853a7cc08",
+    "url": "/portal/static/media/futura-pt-bold-589e44b6aacd3.524f304d.woff"
   },
   {
     "revision": "7b72af48a503d2e6c81337e48d0d1401",
     "url": "/portal/static/media/futura-pt-heavy-589a6dd12187e.7b72af48.woff"
   },
   {
-    "revision": "307623bd5829c504594bdf56bc230d5f",
+    "revision": "daaf3ca9e01958267b35fa97e186a0c0",
+    "url": "/portal/static/media/futura-pt-bold-oblique-589e453384a18.daaf3ca9.woff"
+  },
+  {
+    "revision": "20298b5698e78bacccd4da61cc38191f",
+    "url": "/portal/static/media/futura-pt-heavy-oblique-589a6e480ab16.20298b56.woff"
+  },
+  {
+    "revision": "8aa8ba3a2f7bc2b3831b0e38130ad872",
     "url": "/portal/index.html"
   }
 ];
