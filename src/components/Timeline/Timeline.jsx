@@ -1,9 +1,10 @@
-import { CSSTransition } from 'react-transition-group';
 import React, { Component } from 'react'
-import '../../assets/styles/animations.scss'
+import { CSSTransition } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import image3 from '../../assets/images/backgrounds/background_hands.jpg';
+import '../../assets/styles/animations.scss'
+
 
 class Timeline extends Component {
     constructor(props) {
@@ -23,14 +24,12 @@ class Timeline extends Component {
             const elementSate = this.state.elements[i];
 
             elementSate.show = threshold >= (offsetTop + (elementHeight/2));
-            console.log('show?',threshold >= (offsetTop + (elementHeight/2)))
             this.setState({ element: elementSate })
         } 
     }
 
     componentDidMount() {
-        const itemsCollection = document.querySelectorAll("*[class^=\"Timeline-TimelineContent\"]")
-        console.log(itemsCollection);
+        const itemsCollection = document.querySelectorAll("*[id^=\"TimelineItem\"]")
 
         window.addEventListener('scroll', () => this.showWhenScrolled(itemsCollection));
     }
@@ -42,7 +41,7 @@ class Timeline extends Component {
     render() {
         const { classes, slide, fade } = this.props;
         const elementList = this.state.elements.map((element, index) => {
-            return <div className={classes.TimelineItem} key={index}>
+            return <div className={classes.TimelineItem} key={index} id={`TimelineItem-${index}`}>
                         <CSSTransition
                             in={element.show}
                             enter= {true}
@@ -72,9 +71,9 @@ class Timeline extends Component {
                             enter={true}
                             timeout={100}
                             classNames={fade}>
-                        <div className={classes.TimelinePeriod}>
-                            {element.period}
-                        </div>
+                            <div className={classes.TimelinePeriod}>
+                                {element.period}
+                            </div>
                         </CSSTransition>
                     </div>
                 });

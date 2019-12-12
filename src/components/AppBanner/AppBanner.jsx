@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import { changeHeader } from '../../redux/appActions';
 import { CSSTransition } from 'react-transition-group';
+import './AppBanner.scss'
 
 class AppBanner extends Component {
     constructor(props) {
@@ -12,12 +13,10 @@ class AppBanner extends Component {
           height: window.innerHeight,
           transform: 'translate3d(0, 0, 0)',
         };
-        console.log(this.props)
         this.translateBanner = this.translateBanner.bind(this);
       }
     
       componentDidMount() {
-        console.log(this.props)
         window.addEventListener('scroll', this.translateBanner);
       }
     

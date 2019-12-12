@@ -19,8 +19,7 @@ export default function CollapseItem({id, title, content}) {
             <input
                 className="menu-button hiden"
                 id={id} 
-                type="checkbox"
-            />
+                type="checkbox"/>
             <label className={parentMenuClass}  htmlFor={id}>
                 {title} 
                 {arrows}

@@ -41,20 +41,20 @@ class HomePage extends Component {
     });
 
     return (
-         <section className="Home-page Page">
+         <div className="Home-page Page">
           <div className="Header">
             <h3 className="subtitle">Projects</h3>
           </div>
-          <div className="Projects">
+          <section className="Projects">
             {projectsPreviews}
-          </div>
+          </section>
           <div className="Header">
             <h3 className="subtitle">Carreer</h3>
           </div>
-          <div className="Carreer">
+          <section className="Carreer">
             <Timeline elements={elements} slide={slide} fade='fade' backgroundImage={'url(' + carrerSectionBackground + ')'}></Timeline>
-          </div>     
-         </section>
+          </section>     
+         </div>
     );
   }
 }
