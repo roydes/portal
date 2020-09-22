@@ -1,31 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "8678ec2bc6db836338b8ed7a3de96a93",
-    "url": "/portal/static/media/uikit.8678ec2b.png"
+    "revision": "f1e0c1aeddb91eaeb8bd",
+    "url": "/portal/static/css/main.310d4c13.chunk.css"
   },
   {
-    "revision": "d3febae4aab9552f9a5a",
-    "url": "/portal/static/css/main.20b5e602.chunk.css"
+    "revision": "f1e0c1aeddb91eaeb8bd",
+    "url": "/portal/static/js/main.f5a7e02f.chunk.js"
   },
   {
     "revision": "05d4c05c31e6e52e5e67",
     "url": "/portal/static/js/runtime~main.3c49a560.js"
   },
   {
-    "revision": "c936d5f169fe12e6fc2a",
-    "url": "/portal/static/js/2.17a11421.chunk.js"
-  },
-  {
-    "revision": "ef15e5ca368e97d72718b1a828e3d6fb",
-    "url": "/portal/static/media/background_mac.ef15e5ca.jpg"
-  },
-  {
-    "revision": "da879a93cdeeae852c7432d798d8586c",
-    "url": "/portal/static/media/background_hands.da879a93.jpg"
+    "revision": "d8707ab0a29be1e3a2f6",
+    "url": "/portal/static/js/2.f38a8452.chunk.js"
   },
   {
     "revision": "bf339332f81181310b365c0a179feee0",
     "url": "/portal/static/media/background_dark.bf339332.jpg"
+  },
+  {
+    "revision": "81818dc26bca3fa275825b96dc70d874",
+    "url": "/portal/static/media/desktop-background.81818dc2.jpg"
   },
   {
     "revision": "b446ca5a397c1ef6fb94cd02c4e94335",
@@ -34,6 +30,22 @@ self.__precacheManifest = [
   {
     "revision": "087292cd6aad2ee0fef6541d038b112e",
     "url": "/portal/static/media/boostrap.087292cd.svg"
+  },
+  {
+    "revision": "f68d1a22f32b1debdc74c7f09b785264",
+    "url": "/portal/static/media/r3-software.f68d1a22.png"
+  },
+  {
+    "revision": "f147b8460a1164dccfe38cc986d41a13",
+    "url": "/portal/static/media/parallax.f147b846.png"
+  },
+  {
+    "revision": "8b07c5f49abd57651f161b789be34c50",
+    "url": "/portal/static/media/trip-paradise.8b07c5f4.png"
+  },
+  {
+    "revision": "ef15e5ca368e97d72718b1a828e3d6fb",
+    "url": "/portal/static/media/background_mac.ef15e5ca.jpg"
   },
   {
     "revision": "773d2d6fa0dab5ed886e948fca240c6f",
@@ -64,8 +76,8 @@ self.__precacheManifest = [
     "url": "/portal/static/media/swift.db95c7a5.png"
   },
   {
-    "revision": "d3febae4aab9552f9a5a",
-    "url": "/portal/static/js/main.4d83e7e3.chunk.js"
+    "revision": "8678ec2bc6db836338b8ed7a3de96a93",
+    "url": "/portal/static/media/uikit.8678ec2b.png"
   },
   {
     "revision": "8b8cae1a997708f0ff0e6831d5abe474",
@@ -88,47 +100,47 @@ self.__precacheManifest = [
     "url": "/portal/static/media/futura-pt-light-589a6e187563a.09fd7959.woff"
   },
   {
-    "revision": "d20e5f06ba08929c23458868bec9911a",
-    "url": "/portal/static/media/futura-pt-book-oblique-589e44623c7b4.d20e5f06.woff"
-  },
-  {
-    "revision": "ee9a9a1d64909eb00f0cd2ea053cf3f6",
-    "url": "/portal/static/media/futura-pt-light-oblique-589e448ae90e2.ee9a9a1d.woff"
-  },
-  {
-    "revision": "1e77458ac18ace690912d6bf6c2c7cdf",
-    "url": "/portal/static/media/futura-pt-medium-oblique-589e460871ec2.1e77458a.woff"
-  },
-  {
-    "revision": "3f7f41395794e58c0f45cbbb08d00e81",
-    "url": "/portal/static/media/futura-pt-demibold-oblique-589e43ec3ea82.3f7f4139.woff"
+    "revision": "56f56c319f80758c6a68ad4be0ca5bc8",
+    "url": "/portal/static/media/futura-pt-medium-589e45b956de4.56f56c31.woff"
   },
   {
     "revision": "202fb753da68f923a0ed47078847b412",
     "url": "/portal/static/media/futura-pt-demibold-589e43b852117.202fb753.woff"
   },
   {
-    "revision": "56f56c319f80758c6a68ad4be0ca5bc8",
-    "url": "/portal/static/media/futura-pt-medium-589e45b956de4.56f56c31.woff"
+    "revision": "d20e5f06ba08929c23458868bec9911a",
+    "url": "/portal/static/media/futura-pt-book-oblique-589e44623c7b4.d20e5f06.woff"
+  },
+  {
+    "revision": "3f7f41395794e58c0f45cbbb08d00e81",
+    "url": "/portal/static/media/futura-pt-demibold-oblique-589e43ec3ea82.3f7f4139.woff"
+  },
+  {
+    "revision": "1e77458ac18ace690912d6bf6c2c7cdf",
+    "url": "/portal/static/media/futura-pt-medium-oblique-589e460871ec2.1e77458a.woff"
   },
   {
     "revision": "524f304d1a3045b391685b6853a7cc08",
     "url": "/portal/static/media/futura-pt-bold-589e44b6aacd3.524f304d.woff"
   },
   {
-    "revision": "7b72af48a503d2e6c81337e48d0d1401",
-    "url": "/portal/static/media/futura-pt-heavy-589a6dd12187e.7b72af48.woff"
-  },
-  {
     "revision": "daaf3ca9e01958267b35fa97e186a0c0",
     "url": "/portal/static/media/futura-pt-bold-oblique-589e453384a18.daaf3ca9.woff"
+  },
+  {
+    "revision": "ee9a9a1d64909eb00f0cd2ea053cf3f6",
+    "url": "/portal/static/media/futura-pt-light-oblique-589e448ae90e2.ee9a9a1d.woff"
+  },
+  {
+    "revision": "7b72af48a503d2e6c81337e48d0d1401",
+    "url": "/portal/static/media/futura-pt-heavy-589a6dd12187e.7b72af48.woff"
   },
   {
     "revision": "20298b5698e78bacccd4da61cc38191f",
     "url": "/portal/static/media/futura-pt-heavy-oblique-589a6e480ab16.20298b56.woff"
   },
   {
-    "revision": "8aa8ba3a2f7bc2b3831b0e38130ad872",
+    "revision": "0fb456a3330cd7df900f553d878d8cde",
     "url": "/portal/index.html"
   }
 ];
